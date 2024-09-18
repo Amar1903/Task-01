@@ -1,59 +1,31 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>Personal Information</title>
-    </head>
-    <body style="background-color: powderblue;">
-        <center>
-        <br><br><br><br>
-        <h1>PERSONAL INFORMATION</h1>
-        <form>
-        <table><tr>
-            <td><label>FirstName:</label></td>
-            <td><input type="text" id="fname" placeholder="Enter your FirstName" required></td>
-        </tr>
-        <tr>
-            <td><label>LastName:</label></td>
-            <td><input type="text" id="lname" placeholder="Enter your LastName" required></td>
-        </tr>
-        <tr>
-            <td><label>Gender:</label></td>
-            <td><input type="radio" name="gender" id="Male" value="Male" required>Male
-        <input type="radio" name="gender" id="FeMale" value="FeMale" required>FeMale</td>
-        <tr>
-            <td><label>Date of Birth:</label></td>
-            <td><input type="date" id="dob" required></td>
-        </tr>
-        <tr>
-            <td><label>Email:</label></td>
-            <td><input type="email" id="email" required></td>
-        </tr>
-        <tr>
-            <td>Password:</td>
-            <td><input type="password" id="password" required></td>
-        </tr>
-        <tr></tr>
-            <td>Address:</td>
-            <td><textarea id="Address" cols="20" rows="03"required></textarea></td>
-        </tr>
-        <tr>
-            <td>Mobile:</td>
-            <td><input type="text" id="num" required></td>
-        </tr>
-        </table>
-        <label>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspHobbies:</label>
-        &nbsp&nbsp&nbsp&nbsp&nbsp
-            <input type="checkbox" id="h1" value="Reading">Reading
-            <input type="checkbox" id="h2" value="Playing Games">Playing
-            <input type="checkbox" id="h3" value="Dancing">Dancing
-            <input type="checkbox" id="h4" value="Cooking">Cooking
-        <br><br>
-        <input type="s\ubmit" value="Submit">
-        <input type="reset" value="Reset">
+<html lang>
+<head>
+  <title>Login Form</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+  <div class="wrapper">
+    <form action="">
+      <h1>Login</h1>
+      <div class="input-box">
+        <input type="text" placeholder="Username" required>
+        <i class='bx bxs-user'></i>
+      </div>
+      <div class="input-box">
+        <input type="password" placeholder="Password" required>
+        <i class='bx bxs-lock-alt' ></i>
+      </div>
+      <div class="remember-forgot">
+        <label><input type="checkbox">Remember Me</label>
+        <a href="#">Forgot Password</a>
+      </div>
+      <button type="submit" class="btn">Login</button>
+      <div class="register-link">
+        <p>Dont have an account? <a href="register.html">Register</a></p>
+      </div>
     </form>
-    </center>
-    </body>
-    </html>
-
-        
-
+  </div>
+</body>
+</html>
